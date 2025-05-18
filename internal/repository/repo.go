@@ -63,3 +63,15 @@ func (r *CouponRepo) IncrementUsage(userID, couponCode string) {
 	}
 	r.userCouponUsage[userID][couponCode]++
 }
+
+func (r *CouponRepo) GetAllCoupons() []model.Coupon {
+	r.mu.Lock()
+	defer r.mu.Unlock()
+
+	coupons := make([]model.Coupon, 0, len(r.coupons))
+	for _, coupon := range r.coupons {
+		coupons = append(coupons, coupon)
+	}
+	return coupons
+}
+

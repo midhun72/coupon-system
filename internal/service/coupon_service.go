@@ -1,6 +1,7 @@
 package service
 
 import (
+	"fmt"
 	"coupon-system/internal/model"
 	"coupon-system/internal/repository"
 	"coupon-system/internal/validation"
@@ -20,6 +21,10 @@ func (s *CouponService) CreateCoupon(coupon model.Coupon) {
 
 func (s *CouponService) ValidateCoupon(req model.ValidateRequest) model.ValidateResponse {
 	coupon, err := s.repo.Get(req.CouponCode)
+	fmt.Println(req)
+	fmt.Println(req.CouponCode)
+	fmt.Println(s.repo)
+	fmt.Println(err)
 	if err != nil {
 		return model.ValidateResponse{Valid: false, Message: "Coupon not found"}
 	}
@@ -30,4 +35,9 @@ func (s *CouponService) ValidateCoupon(req model.ValidateRequest) model.Validate
 	}
 	return resp
 }
+
+func (s *CouponService) GetAllCoupons() []model.Coupon {
+	return s.repo.GetAllCoupons()
+}
+
 

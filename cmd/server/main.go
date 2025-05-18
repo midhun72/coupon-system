@@ -16,6 +16,7 @@ func main() {
 
 	http.HandleFunc("/admin/coupons", api.CreateCouponHandler)
 	http.HandleFunc("/validate-coupon", api.ValidateCouponHandler)
+	http.HandleFunc("/admin/coupons/list", api.GetAllCouponsHandler)
 
 	log.Println("🚀 Server started at http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
