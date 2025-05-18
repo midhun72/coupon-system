@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/midhun72/coupon-system/internal/model"
-	"github.com/midhun72/coupon-system/internal/service"
+	"coupon-system/internal/model"
+	"coupon-system/internal/service"
 )
 
 var couponService *service.CouponService

@@ -3,8 +3,8 @@ package validation
 import (
 	"time"
 
-	"github.com/midhun72/coupon-system/internal/model"
-	"github.com/midhun72/coupon-system/internal/repository"
+	"coupon-system/internal/model"
+	"coupon-system/internal/repository"
 )
 
 func ValidateLogic(coupon model.Coupon, req model.ValidateRequest, repo *repository.CouponRepo) model.ValidateResponse {

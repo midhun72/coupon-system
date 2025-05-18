@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/midhun72/coupon-system/internal/api"
-	"github.com/midhun72/coupon-system/internal/repository"
-	"github.com/midhun72/coupon-system/internal/service"
+	"coupon-system/internal/api"
+	"coupon-system/internal/repository"
+	"coupon-system/internal/service"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package repository
 import (
 	"sync"
 	"errors"
-	"github.com/midhun72/coupon-system/internal/model"
+	"coupon-system/internal/model"
 )
 var ErrCouponNotFound = errors.New("coupon not found")
 

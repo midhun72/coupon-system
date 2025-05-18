@@ -1,9 +1,9 @@
 package service
 
 import (
-	"github.com/midhun72/coupon-system/internal/model"
-	"github.com/midhun72/coupon-system/internal/repository"
-	"github.com/midhun72/coupon-system/internal/validation"
+	"coupon-system/internal/model"
+	"coupon-system/internal/repository"
+	"coupon-system/internal/validation"
 )
 
 type CouponService struct {
