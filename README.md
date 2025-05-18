@@ -5,7 +5,7 @@ To run this go
 
 Then
 
-Then to save coupens
+Then to save coupons
 
 url : http://localhost:8080/admin/coupons
 Request data 
